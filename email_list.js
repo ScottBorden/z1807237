@@ -9,31 +9,38 @@ var joinList = function() {
     var emailAddress2 = $("email_address2").value;
     var firstName = $("first_name").value;
     var errorMessage = "";
+    var isValid = true;
+    
+
+   
 
     // validate the entries
     if (emailAddress1 == "") {
-    	errorMessage = "First email address entry required";
-        $("email_address1").focus();
-    } else if (emailAddress2 == "") {
-    	errorMessage = "Second email address entry required";
-    	$("email_address2").focus();
-    } else if (emailAddress1 != emailAddress2) {
-    	errorMessage = "Email address entries must match";
-    	$("email_address2").focus();
-    } else if (firstName == "") {
-    	errorMessage = "First name entry required";
-    	$("first_name").focus();
+        $("email_address1").nextElementSibling.firstChild.nodeValue
+        = "First email address entry required";
+        isValid = false; }
+    else { 
+        $("email_address1").nextElementSibling.firstChild.nodeValue = ""; }
+        
+    if (emailAddress2 == "") {
+        $("email_address2").nextElementSibling.firstChild.nodeValue
+        = "Second email address entry required";
+        isValid = false; }
+    else {
+            $("email_address2").nextElementSibling.firstChild.nodeValue = ""; }
+
+    
+        if (firstName == "") {
+            $("first_name").nextElementSibling.firstChild.nodeValue
+            = "First name required";
+            isValid = false; }
+        else { 
+            $("first_name").nextElementSibling.firstChild.nodeValue = ""; }
     }
 
     // submit the form if all entries are valid
     // otherwise, display an error message
-    if (errorMessage == "") {
-        $("email_form").submit(); 
-    } else {
-    	alert(errorMessage);
-    }
-};
-
+  
 window.onload = function() {
     $("join_list").onclick = joinList;
     $("email_address1").focus();
