@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<header>
+<title>Scott Borden's Web Presence</title>
+</header>
+<article>
+<style>
+body {background-color: burlywood }
+</style>
+<body>
+   <h1 style="color:Green">My Favorite Hobby </h1>
+   <nav>
+ </nav>
+ <main>
+   <h2 style="color:Green"> Golf! </h2>
+   <p>A link to my favorite tournament!: <a href="https://www.usopen.com/"> The US Open</a></p>
+   
+  
+  <img src="IMG_3280.jpg"
+  alt="A picture of me golfing in Vegas"
+  width="500" "height="200"> 
+  <p>Golfing is a very difficult sport that I have been playing since I was young.  It has always been a big part of my life because I enjoy playing it and watching it.  It is also cool learning about all of the history of golf, including originating in Scotland and now being a worldwide sport. </p>
+ </main>
+ <footer>
+    <p>Posted by: Scott Borden</p>
+    <p>My email: <a href="z1807237@students.niu.edu">z1807237@students.niu.edu</a>.</p>
+        
+  </footer>
+
+
+</body>
+</article>
+</html>
